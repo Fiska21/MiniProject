@@ -1,0 +1,176 @@
+.body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+.footer {
+    display: block;
+    border-style: dashed;
+    /* background-color: #fbfdfa; */
+    box-shadow: 0px 3px 3px 3px #f8f5f5, 0vw 3vw 5vw rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: #b3b0ad;
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 300vh;
+    height: 70vh;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-foot {
+    display: block;
+    border-style: none;
+    /* background-color: #fbfdfa; */
+    border-style: none;
+    padding: 30px;
+    margin-top: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 10vh;
+    }
+
+.container-feed {
+    display: block;
+    border-style: none;
+    /* background-color: #fbfdfa; */
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #b3b0ad;
+    padding: 20px;
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100vh;
+    height: 2vh;
+    max-width: 100%;
+}
+
+.logo {
+
+    display: block;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    /* height: auto; */
+
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0px 3px 3px 3px #f8f5f5, 0vw 3vw 5vw rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    width: 10px;
+    padding: 30px;
+    height: auto;
+    text-align: center;
+    margin-left: 50px;
+    max-width: 580px;
+    width: 18rem
+}
+
+.container-sayur {
+    /* box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(245, 240, 240, 0.19); */
+    max-width: max-content;
+    display: flex;
+    border-style: dashed;
+    border-color: rgb(209, 209, 168);
+    border-radius: 20px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+
+nav {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover>ul {
+    display: block;
+    width: 150px;
+}
+
+nav ul {
+    background: #e9a256;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:hover {
+    background: rgb(102, 56, 13);
+}
+
+nav ul li:hover a {
+    color: #fff;
+}
+
+nav ul li a {
+    display: block;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul ul {
+    background: #e9a256;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none;
+    /* border-top: 20px soild #53bd84;
+    border-bottom: 20px solid #53bd84; */
+    position: relative;
+    text-align: left;
+}
+
+nav ul ul li a {
+    padding: 15px 40px;
+    color: #fff;
+}
+
+nav ul ul li a:hover {
+    background-color: rgb(102, 56, 13);
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
