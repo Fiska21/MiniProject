@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mini.css">
+
+
+</head>
+
+<body class="body">
+
+
+  <nav style="display:inline-block;">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Info</a>
+        <ul>
+          <li><a href="about.html">About Us </a></li>
+          <li><a href="#">How to Order</a></li>
+        </ul>
+      </li>
+      <li><a style="margin-left: 5px;" ; href="#" onClick="return confirm ('Yakin?')">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="alert alert-light" style="margin-left: 10em;">
+      <h5>New Arrival on October 2021, Check it out!</h5>
+    </div>
+    <img src="./LOGO_SAYOOR-removebg-preview.png" class="logo"></img>
+
+    <div class="container-sayur row">
+
+      <div class="card" style="max-width: 100%; width: 18rem;">
+        <img class="card-img-top"
+          src="https://dn56y54v4g6fs.cloudfront.net/product/17_06_2020_12_18_53_bayam_organik.jpg" alt="Card image cap">
+        </img>
+        <div class="card-body">
+          <h5 class="card-title">Bayam Organik</h5>
+          <h6 class="card-subtitle">Rp 12.000</h6>
+          <p class="card-text">Per 250 Gram</p>
+          <button class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#bayamModal">Preview</button>
+        </div>
+
+      </div>
+
+      <div class="card" style="max-width: 100%; width: 18rem;">
+        <img class="card-img-top" src="https://dn56y54v4g6fs.cloudfront.net/product/07_01_2021_04_57_42_bayem_merah.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Bayam Merah</h4>
+          <h5 class="card-subtitle">Rp 15.000</h5>
+          <p class="card-text">Per 250 Gram</p>
+          <button class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#bayammerah">Preview</button>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 100%; width: 18rem;">
+        <img class="card-img-top" src="https://dn56y54v4g6fs.cloudfront.net/product/20_11_2020_11_12_40_baby_pakcoy.jpg"
+          alt="Card image cap" />
+        <div class="card-body">
+          <h4 class="card-title">Baby Pakcoy</h4>
+          <h5 class="card-subtitle">Rp 7.000</h5>
+          <p class="card-text">Per 250 Gram</p>
+          <button class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#Pakcoy">Preview</button>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 100%; width: 18rem;">
+        <img class="card-img-top" src="https://dn56y54v4g6fs.cloudfront.net/product/11_09_2020_03_46_30_Baby_Buncis.jpg"
+          alt="Card image cap" />
+        <div class="card-body">
+          <h4 class="card-title">Baby Buncis</h4>
+          <h5 class="card-subtitle">Rp 6.500</h5>
+          <p class="card-text">Per 250 Gram</p>
+          <button class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#BabyBuncis">Preview</button>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 100%; width: 18rem;">
+        <img class="card-img-top"
+          src="https://dn56y54v4g6fs.cloudfront.net/product/18_11_2020_12_08_54_wortel_super.jpg"
+          alt="Card image cap" />
+        <div class="card-body">
+          <h4 class="card-title">Wortel Super</h4>
+          <h5 class="card-subtitle">Rp 7.500</h5>
+          <p class="card-text">Per 500 Gram</p>
+          <button class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#WortelSuper">Preview</button>
+        </div>
+      </div>
+
+
+      <!-- modal -->
+      <div id="bayammerah" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="width: 500px; height: 500px;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3><strong>Bayam Merah</strong></h3>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="https://dn56y54v4g6fs.cloudfront.net/product/07_01_2021_04_57_42_bayem_merah.jpg"
+                style="max-width: 35%;">
+              <article> bayam adalah sayuran hijau yang biasa dimakan bagian daun dan batang lunaknya.
+                bayam mengandung zat besi, Beta Carotene, dan vitamin E. karena kandungan zat besi di bayam relatif
+                tinggi, bayam baik untuk dikonsumsi penderita anemia.</article>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#bayammerah">Add To Cart</button>
+              <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#bayammerah">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Pakcoy" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="width: 500px; height: 500px;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3><strong>Baby Pakcoy</strong></h3>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="https://dn56y54v4g6fs.cloudfront.net/product/20_11_2020_11_12_40_baby_pakcoy.jpg"
+                style="max-width: 35%;">
+              <article> bayam adalah sayuran hijau yang biasa dimakan bagian daun dan batang lunaknya.
+                bayam mengandung zat besi, Beta Carotene, dan vitamin E. karena kandungan zat besi di bayam relatif
+                tinggi, bayam baik untuk dikonsumsi penderita anemia.</article>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#Pakcoy">Add To Cart</button>
+              <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#Pakcoy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="BabyBuncis" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="width: 500px; height: 500px;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3><strong>Baby Buncis</strong></h3>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="https://dn56y54v4g6fs.cloudfront.net/product/11_09_2020_03_46_30_Baby_Buncis.jpg"
+                style="max-width: 35%;">
+              <article> bayam adalah sayuran hijau yang biasa dimakan bagian daun dan batang lunaknya.
+                bayam mengandung zat besi, Beta Carotene, dan vitamin E. karena kandungan zat besi di bayam relatif
+                tinggi, bayam baik untuk dikonsumsi penderita anemia.</article>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#BabyBuncis">Add To Cart</button>
+              <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#BabyBuncis">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bayamModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="width: 500px; height: 500px;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3><strong>Bayam Organik</strong></h3>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="https://dn56y54v4g6fs.cloudfront.net/product/17_06_2020_12_18_53_bayam_organik.jpg"
+                style="max-width: 35%;">
+              <article> bayam adalah sayuran hijau yang biasa dimakan bagian daun dan batang lunaknya.
+                bayam mengandung zat besi, Beta Carotene, dan vitamin E. karena kandungan zat besi di bayam relatif
+                tinggi, bayam baik untuk dikonsumsi penderita anemia.</article>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#bayamModal">Add To Cart</button>
+              <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#bayamModal">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="WortelSuper" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="width: 500px; height: 500px;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3><strong>Wortel Super</strong></h3>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="https://dn56y54v4g6fs.cloudfront.net/product/18_11_2020_12_08_54_wortel_super.jpg"
+                style="max-width: 35%;">
+              <article> bayam adalah sayuran hijau yang biasa dimakan bagian daun dan batang lunaknya.
+                bayam mengandung zat besi, Beta Carotene, dan vitamin E. karena kandungan zat besi di bayam relatif
+                tinggi, bayam baik untuk dikonsumsi penderita anemia.</article>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#WortelSuper">Add To Cart</button>
+              <button class="btn btn-primary" style="float: right; font-size:medium" data-toggle="modal"
+                data-target="#WortelSuper">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <strong>Payment Methode :</strong>
+      <img src="https://carisayur.com/images/pembayaran.png" style="max-width: 30%;"> </img>
+    </div>
+
+    <!-- <div class="container-foot>  -->
+    <p style="
+      margin-top: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align:left;">
+      <strong>Contact Us</strong>
+    </p>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+
+
+      <div class="form-group" style="margin-top: 25px;">
+        <label for="exampleFormControlTextarea1">Drop your feedback here...</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+
+
+  </footer>
+
+
+
+</body>
+
+
+
+</html>

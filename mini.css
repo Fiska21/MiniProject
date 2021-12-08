@@ -1,7 +1,10 @@
+.article{background-color: #f2fcdf; text-align:justify; margin-bottom: 50px;}
+
+
 .body {
     background-color: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     color: #000;
 }
 
@@ -31,7 +34,7 @@
     margin-top: 100px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 10vh;
-    }
+}
 
 .container-feed {
     display: block;
@@ -69,30 +72,29 @@
 }
 
 .card {
-    box-shadow: 0px 3px 3px 3px #f8f5f5, 0vw 3vw 5vw rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 4px 4px 4px #fff5be, 4px 4px 4px 4px rgba(0, 0, 0, 0.19);
     border-radius: 20px;
-    width: 10px;
-    padding: 30px;
+    padding: 20px;
     height: auto;
     text-align: center;
     margin-left: 50px;
-    max-width: 580px;
-    width: 18rem
+    margin-bottom: 50px;
 }
 
 .container-sayur {
-    /* box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(245, 240, 240, 0.19); */
-    max-width: max-content;
     display: flex;
-    border-style: dashed;
+    border-style: none;
     border-color: rgb(209, 209, 168);
-    border-radius: 20px;
-    padding: 50px;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 50px;
     margin-bottom: 50px;
     max-width: 100%;
+}
+
+
+.breadcrumb li a {
+    color: #f8f5f5;
 }
 
 nav {
